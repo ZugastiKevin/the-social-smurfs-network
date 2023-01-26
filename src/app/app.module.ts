@@ -4,17 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { SmurfsComponent } from './smurfs/smurfs.component';
+import { SmurfsModule } from './smurfs/smurfs.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SmurfsComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    SmurfsModule,
     AppRoutingModule,
-    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
